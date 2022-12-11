@@ -3,11 +3,12 @@ import { useNavigate } from "react-router-dom";
 
 import axiosConfig from '../axiosConfig';
 
-const Signout = () => {
+const Signout = (props) => {
     const navigate = useNavigate();
     useEffect(()=>{
         axiosConfig.get('admin/signout')
         .then(response=>{
+        props.onHandleSignOut(false);
         // var res = response.data;
         // console.log(response.message);
         localStorage.clear();

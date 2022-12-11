@@ -25,17 +25,17 @@ const Dashboard = () => {
     })
     .catch(error=>{
       console.log(error.message);
-      // navigate('/admin');
+      navigate('/admin');
     })
   }, [])
     return (
         <Container>
             <Row>
-              <Col><Cardinfo type='Users' data={users} color='#ffc107' /></Col>
-              <Col><Cardinfo type='Doctors'data={doctors} color='#17a2b8' /></Col>
+              <Col><Cardinfo type='Users' data={users} color='#ffc107' rd={'/admin/user/view'}/></Col>
+              <Col><Cardinfo type='Doctors'data={doctors} color='#17a2b8' rd={'/admin/doctor/view'}/></Col>
             </Row>
             <Row>
-              <Col><Cardinfo type='Counters' data={counters} color='#20c997' /></Col>
+              <Col><Cardinfo type='Counters' data={counters} color='#20c997' rd={'/admin/counter/view'}/></Col>
               <Col><Cardinfo type='Operators' data={operators} color='#fd7e14' /></Col>
             </Row>
         </Container>

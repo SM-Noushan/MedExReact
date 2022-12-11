@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import { Link, NavLink } from "react-router-dom";
 
 const Cardinfo = (props) => {
-  const {type, data, color} = props;
+  const {type, data, color, rd} = props;
   return (
     <Card style={{ backgroundColor: color }} className="mt-5 p-2">
       <Card.Header>Stats</Card.Header>
@@ -13,7 +13,7 @@ const Cardinfo = (props) => {
           Registered: {data}
         </Card.Text>
       </Card.Body>
-      <Card.Footer as={Link} to={'#'} >More Info</Card.Footer>
+      <Card.Footer as={Link} to={rd}> More Info </Card.Footer>
     </Card>
   )
 }
