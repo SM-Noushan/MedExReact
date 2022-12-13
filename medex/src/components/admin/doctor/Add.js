@@ -100,7 +100,7 @@ const Add = () => {
                 <span style={{ color: 'red' }}>{formik.errors.bloodgroup}</span>);
 
   return (
-        <Card className="mt-4 p-4" style={{ width: '60%', left: '20%' }}>
+        <Card className="mt-4 p-4" style={{ width: '65%', left: '20%' }}>
         <Card.Header>
             <Breadcrumb>
                 <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/admin/dashboard" }}> Dashboard </Breadcrumb.Item>
@@ -126,7 +126,7 @@ const Add = () => {
                     Username
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="text" name="userid" value={formik.values.userid} onChange={formik.handleChange} placeholder="Username" required />
+                    <Form.Control type="tel" name="userid" value={formik.values.userid} onChange={formik.handleChange} placeholder="Username" required />
                     {/* {renderNameError} */}
                     </Col>
                 </Form.Group>
@@ -146,7 +146,7 @@ const Add = () => {
                     Name
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="text" name="name" value={formik.values.name} onChange={formik.handleChange} placeholder="Name" required />
+                    <Form.Control type="tel" name="name" value={formik.values.name} onChange={formik.handleChange} placeholder="Name" required />
                     {renderNameError}
                     </Col>
                 </Form.Group>
@@ -176,7 +176,7 @@ const Add = () => {
                     Department
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="text" name="department" value={formik.values.department} onChange={formik.handleChange} placeholder="Department" required />
+                    <Form.Control type="tel" name="department" value={formik.values.department} onChange={formik.handleChange} placeholder="Department" required />
                     {renderDepartmentError}
                     </Col>
                 </Form.Group>
@@ -286,7 +286,7 @@ const Add = () => {
                     Phone
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="text" name="phone1" value={formik.values.phone1} onChange={formik.handleChange} placeholder="Phone" required />
+                    <Form.Control type="tel" name="phone1" value={formik.values.phone1} onChange={formik.handleChange} placeholder="Phone" required />
                     {renderPhoneError}
                     </Col>
                 </Form.Group>

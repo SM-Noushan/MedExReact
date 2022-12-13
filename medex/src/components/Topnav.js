@@ -15,6 +15,9 @@ const Topnav = ({isLoggedIn}) => {
           <Navbar.Brand as={Link} to="#">MedEX</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <ProtectedNav isLoggedIn={isLoggedIn} > <TopnavContent /> </ProtectedNav>
+          <Nav>
+            <Nav.Link as={Link} to="medex/faqs">FAQs</Nav.Link>
+          </Nav>
       </Container>
     </Navbar>
   )

@@ -70,7 +70,7 @@ const Add = () => {
                 <span style={{ color: 'red' }}>{formik.errors.password}</span>);
 
   return (
-        <Card className="mt-4 p-4" style={{ width: '50%', left: '23%' }}>
+        <Card className="mt-4 p-4" style={{ width: '55%', left: '23%' }}>
         <Card.Header>
             <Breadcrumb>
                 <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/admin/dashboard" }}> Dashboard </Breadcrumb.Item>
@@ -95,7 +95,7 @@ const Add = () => {
                     Name
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="text" name="name" value={formik.values.name} onChange={formik.handleChange} placeholder="Name" required />
+                    <Form.Control type="tel" name="name" value={formik.values.name} onChange={formik.handleChange} placeholder="Name" required />
                     {renderNameError}
                     </Col>
                 </Form.Group>
@@ -105,7 +105,7 @@ const Add = () => {
                     UserID
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="text" name="userid" value={formik.values.userid} onChange={formik.handleChange} placeholder="ID" required />
+                    <Form.Control type="tel" name="userid" value={formik.values.userid} onChange={formik.handleChange} placeholder="ID" required />
                     {renderUseridError}
                     </Col>
                 </Form.Group>

@@ -5,7 +5,12 @@ const instance = axios.create({
 });
 
 instance.interceptors.request.use(function (config) {
-  config.headers.Authorization =  localStorage.getItem("admin");
+  const admin = localStorage.getItem('admin');
+  if(admin)
+    config.headers.Authorization =  admin;
+  const user = localStorage.getItem('user');
+  if(user)
+    config.headers.Authorization =  user;
     // console.log( config.headers.Authorization);
     // console.log("intercepted");
     return config;

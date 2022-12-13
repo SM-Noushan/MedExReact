@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Signin from './Signin/Signin';
 
 const Home = () => {
   return (
     <div>
-        <h1 style={{ color: 'red', textAlign: 'center', marginTop: '10%' }}>In Progress</h1>
+        <Signin />
     </div>
   )
 }

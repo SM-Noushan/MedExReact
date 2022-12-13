@@ -20,6 +20,8 @@ import CAdd from './components/admin/counter/Add';
 
 //User_Start
 import Index from './components/user/Index';
+import USignout from './components/Signin/Signout';
+import Faqs from './components/FAQ/FAQS';
 //User_End
 
 function App() {
@@ -53,6 +55,8 @@ function App() {
         {/* <Route exact path="/admin/counter/remove" element={ <CAdd /> } /> */}
 
         <Route exact path="/user/dashboard" element={ <Index /> } />
+        <Route exact path="/user/signout" element={ <USignout /> } />
+        <Route exact path="/medex/faqs" element={ <Faqs /> } />
       </Routes>
       </Container>
     </BrowserRouter>
